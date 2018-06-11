@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Burger</title>
+	<meta charset="UTF-8" http-equiv="Access-Control-Allow-Origin" content="*"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+		
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/burger.js"></script>
+	<script src="js/ingredients.js"></script>
+	<script src="js/orderSale.js"></script>
+	<script src="js/main.js"></script>
+  </head>
+  <body>
+
+	<div class="container">
+
+		<header>
+		   <h1>Burger - Sale</h1>
+		</header>
+		
+		<!-- itens aqui -->  
+		<nav>
+			
+		</nav>
+
+		<article class="form-group">
+		  <!--Burger -->
+		  <h4>Escolha o Lanche</h4>
+		  <select id="burger"class="form-control">
+			<option value="-1">Selecione um Lanche</option>
+		  </select>
+		  
+		  <!--Ingredients -->
+		  <h4>Algum adicional? ( escolha 1 ou mais )</h4>
+		  <table class="ingredients-table">
+			<tr>
+				<td>Ingrediente</td>
+				<td>Quantidade</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><select id="ingredients" class="form-control">
+					</select></td>
+				<td><input type="number" id="ingredientsQtty" class="form-control" min="1" max="99" value="1"></input></td>
+				<td><button class=".btn" onclick="addItem()">Add</button></td>
+			</tr>
+		  </table>
+		  
+		  <!--Ingredients adds-->
+		  <div>
+			  <h6>Ingredientes adicionais</h6>
+			  <div id="adds">
+				
+			  </div>	
+		  </div>
+		  <!--Finish Order -->
+		  <p>
+			<br>
+			<button class=".btn" onclick="saveOrder()">Finalizar Pedido</button>
+		  </p>		  
+		</article>
+
+		<footer>Copyright &copy; Daniel Smanioto</footer>
+
+	</div>
+  </body>
+</html>
