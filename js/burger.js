@@ -9,12 +9,14 @@ function listBurgers() {
 		success: function(data) {
 			
 			for (var i = 0; i < data.length; i++) {
-				$("#burger").html($("#burger").html() +"<option value=" + data[i].id + ">" + data[i].description + "</option>");
+				var burger = data[i];
+				var priceFormatter = burger.priceTotal.toLocaleString("pt-BR", { style: "currency" , currency:"BRL"});
+				$("#burger").html($("#burger").html() +"<option value=" + burger.id + ">" + burger.description + " - ( " +  priceFormatter + " ) </option>");
 			}
 			
 		}, 
 		error: function(e) {
-		  	alert("Error " + e);
+		  	
 		}
 		
 	});

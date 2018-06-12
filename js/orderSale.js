@@ -53,6 +53,12 @@ function saveOrder() {
 } 
 
 function addItem() {
+	var ingredientValue = $("#ingredients").val();
+	if (ingredientValue == null || ingredientValue == -1) {
+		alert("Nenhum adicional selecionado.");
+		return;
+	}
+	
 	var obj = {
 		id: $("#ingredients").val() ,
 		description: $("#ingredients :selected").text(),

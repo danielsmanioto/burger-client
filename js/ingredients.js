@@ -9,12 +9,14 @@ function listIngredients() {
 		success: function(data) {
 
 			for (var i = 0; i < data.length; i++) {
-				$("#ingredients").html($("#ingredients").html() + "<option name="+ data[i].description + " value=" + data[i].id + ">" + data[i].description + "</option>");
+				var ingredient = data[i];
+				var priceFormatter = ingredient.price.toLocaleString("pt-BR", { style: "currency" , currency:"BRL"});
+				$("#ingredients").html($("#ingredients").html() + "<option value=" + ingredient.id + ">" + ingredient.description + " ( "  + priceFormatter + " ) </option>");
 			}
 		
 		}, 
 		error: function(e) {
-		  	alert("Error " + e);
+		  	
 		}		
 	});
 	
