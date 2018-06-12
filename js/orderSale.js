@@ -9,18 +9,18 @@ function saveOrder() {
 		 return;
 	 }
 	 
-	//Ingredients validation
-	var aditionalsList = [];
-	for(var i =0; i < aditionalItens.length ; i++) {
+	 //Ingredients validation
+	 var aditionalsList = [];
+	 for(var i =0; i < aditionalItens.length ; i++) {
 		aditionalsList.push( {id: aditionalItens[i].id } );
-	}
-
-	 var json =  {
-				  burger: {
-					"id": $("#burger").val(),
-					"ingredients": []
-				  },
-				  aditionals: aditionalsList
+	 }
+	
+	var json = {
+				   burger: {
+					 "id": $("#burger").val(),
+					 "ingredients": []
+				   },
+				   aditionals: aditionalsList
 				}	
 				
 	// Finalizar o pedido
@@ -53,7 +53,6 @@ function saveOrder() {
 } 
 
 function addItem() {
-	// adicionar em uma lista
 	var obj = {
 		id: $("#ingredients").val() ,
 		description: $("#ingredients :selected").text(),
@@ -62,6 +61,7 @@ function addItem() {
 	
 	for(var i=0; i< obj.qtty;i++) {
 		$("#adds").html($("#adds").html() + "<label> " + obj.description +  " </label><br>")
+		
 		aditionalItens.push(obj);
 	}
 
