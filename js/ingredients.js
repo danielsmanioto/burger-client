@@ -1,9 +1,10 @@
 function listIngredients() {
-    
+        var URL_API = "http://localhost:80";
+
 	$.ajax({
 		type: "GET",
 		contentType: "application/json;charset=UTF-8",
-		url: "http://localhost:8080/ingredients",
+		url: URL_API + "/ingredients",
 		data : {  },
 		dataType : "json",
 		success: function(data) {

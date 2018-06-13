@@ -1,7 +1,8 @@
  aditionalItens = [];
 
 function saveOrder() {
-     
+	 var URL_API = "http://localhost:80";
+ 
 	 // Burger validation
 	 if($("#burger").val() == -1 ) {
 		 alert("Selecione um lanche.");
@@ -26,10 +27,11 @@ function saveOrder() {
 	// Finalizar o pedido
 	var questionSave = confirm("Deseja finalizar o seu pedido?");
 	if(questionSave) { 
+		
 		$.ajax({
 			type: "POST",
 			contentType: "application/json;charset=UTF-8",
-			url: "http://localhost:8080/orders",
+			url: URL_API + "/orders",
 			data : JSON.stringify(json) 
 			,
 			dataType : "json",
