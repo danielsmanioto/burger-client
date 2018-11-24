@@ -1,8 +1,7 @@
- aditionalItens = [];
+let aditionalItens = [];
 
-function saveOrder() {
-	 var URL_API = "http://localhost:80";
- 
+let saveOrder = () => {
+
 	 // Burger validation
 	 if($("#burger").val() == -1 ) {
 		 alert("Selecione um lanche.");
@@ -31,7 +30,7 @@ function saveOrder() {
 		$.ajax({
 			type: "POST",
 			contentType: "application/json;charset=UTF-8",
-			url: URL_API + "/orders",
+			url: getUrlAPI() + "/orders",
 			data : JSON.stringify(json) 
 			,
 			dataType : "json",
@@ -54,7 +53,7 @@ function saveOrder() {
 	
 } 
 
-function addItem() {
+let addItem = () => {
 	var ingredientValue = $("#ingredients").val();
 	if (ingredientValue == null || ingredientValue == -1) {
 		alert("Nenhum adicional selecionado.");

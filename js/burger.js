@@ -1,11 +1,9 @@
-function listBurgers() {
+let listBurgers = () => {
 
-        var URL_API = "http://localhost:80";
-	
 	$.ajax({
 		type: "GET",
 		contentType: "application/json;charset=UTF-8",
-		url: URL_API + "/burgers",
+		url: getUrlAPI() + "/burgers",
 		data : {  },
 		dataType : "json",
 		success: function(data) {
