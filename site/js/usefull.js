@@ -1,4 +1,4 @@
-const URL_API = "http://localhost:8080";
+const URL_API = "http://localhost:80";
 
 let getUrlAPI = () => {
   return URL_API;

@@ -1,5 +1,4 @@
 FROM nginx
-RUN cd / && mkdir Arquivos && chmod 777 -R Arquivos/
 COPY ./site /usr/share/nginx/html/
 
 VOLUME /Arquivos/

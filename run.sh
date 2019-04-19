@@ -1,2 +1,2 @@
-docker run -d -p 80:80 -v $PWD/site/arquivos:/Arquivos/ burger-client
+docker run -d -p 83:80  burger-client
 
