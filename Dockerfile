@@ -1,4 +1,9 @@
 FROM nginx
-COPY / /usr/share/nginx/html
-VOLUME /tmp
+RUN cd / && mkdir Arquivos && chmod 777 -R Arquivos/
+COPY ./site /usr/share/nginx/html/
 
+VOLUME /Arquivos/
+EXPOSE 80
+WORKDIR /usr/share/nginx/html/
+ENTRYPOINT ["/usr/sbin/nginx"]
+CMD ["-g", "daemon off;"]
