@@ -1,4 +1,4 @@
-const URL_API = "https://dsmanioto-burger-server.herokuapp.com";
+const URL_API = "http://localhost:80";
 
 let getUrlAPI = () => {
   return URL_API;
