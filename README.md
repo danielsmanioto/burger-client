@@ -7,8 +7,10 @@ Esta aplicação é somente a parte cliente(front-end) para executar a aplicaç�
 
 # Aplicação client em produção
 <p>
-https://danielsmanioto.github.io/burger-client
+  https://serene-goodall-f38567.netlify.app/
 </p>
+
+<a href="https://www.netlify.com/">Hospedagem</a>
 
 # Aplicação API
 <p>
