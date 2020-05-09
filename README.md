@@ -7,7 +7,7 @@ Esta aplicação é somente a parte cliente(front-end) para executar a aplicaç�
 
 # Aplicação client em produção
 <p>
-  https://serene-goodall-f38567.netlify.app/
+  https://burger-client.netlify.app/
 </p>
 
 <a href="https://www.netlify.com/">Hospedagem</a>
