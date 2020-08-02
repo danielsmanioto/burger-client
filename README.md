@@ -17,6 +17,16 @@ Esta aplicação é somente a parte cliente(front-end) para executar a aplicaç�
 https://github.com/danielsmanioto/burger-server
 </p>
 
+# Docker usando NGINX
+
+`./run.sh`
+
+`./stop.sh`
+
+# NGINX fora do docker
+
+`cd nginx`
+
 # Testes Funcionais
 <p>
   https://github.com/danielsmanioto/burger-test
