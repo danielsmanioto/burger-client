@@ -1,5 +1,5 @@
 FROM nginx
-COPY ./site /usr/share/nginx/html/
+COPY . /usr/share/nginx/html/
 
 VOLUME /Arquivos/
 EXPOSE 80

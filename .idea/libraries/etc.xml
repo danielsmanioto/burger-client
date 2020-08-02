@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="etc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/nginx/etc.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
