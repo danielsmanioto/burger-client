@@ -18,6 +18,7 @@ https://github.com/danielsmanioto/burger-server
 </p>
 
 # Docker usando NGINX
+`./build.sh`
 
 `./run.sh`
 
